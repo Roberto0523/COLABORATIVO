@@ -101,3 +101,11 @@ div.desc {
 footer.container-fluid.text-center.foot, header {
     background: #383838;
 }
+
+aside{
+    
+    margin-top: -450px;
+    position: absolute;
+    right: 0;
+}
+
