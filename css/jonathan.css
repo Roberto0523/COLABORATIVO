@@ -1,0 +1,45 @@
+
+.contenedor{
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+#hoja{ 
+	padding: 50px 80px; 
+	margin: auto; 
+	background: #FCFEFE; 
+	border: solid #6A868A; 
+	border-width: 6px 4px 1px 0; 
+	width: 80%;
+}
+.contenido_interno{
+	width: 100%;
+	display:inline-block; 
+}
+.contenido_interno div{
+	display:inline-block; 
+}
+p { text-align: justify; }
+table{
+	margin:auto;
+	border-collapse: collapse;
+	border:solid 2px #D2D8D8;
+}
+table thead{
+	background: #DCDCDC;
+}
+table tr{
+	border-bottom: solid 1px #DCDCDC;
+}
+table td{
+	padding: 20px;
+}
+.pie{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: #738685;
+}
+a:hover{
+	color:#D2D8D8;
+}
