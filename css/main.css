@@ -2,11 +2,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+
 body{
     margin:0;
     font-family: sans-serif;
     font-size: 14px;
-	background-color: #FFFF00;	
 }
 
 menu-wrapper ul{
@@ -58,13 +58,12 @@ img{
 	max-width: 100%;
 }
 
-.espacios {
-	margin-top: 70px; 
-	margin-bottom: 70px;
+.quitar-float{
+	float: none;
 }
 
-.seccion{
-	float:none;
+.espacio-arriba{
+	margin-top: 100px;
 }
 
 .pacifico {
@@ -76,7 +75,7 @@ img{
 }
 
 .amarillo {
-	background-color: #FFFF00;
+	color: #FFC219;
 }
 
 .espacio-derecha {
@@ -111,13 +110,10 @@ li a:hover {
     background-color: #FFC219;
 }
 
-<<<<<<< HEAD
-=======
 body {
-    background-color: #d0e4fe;
+    background-color: #FFFF00;
 }
 
->>>>>>> parent of dc0a644... Cambios - Multimedia - Fondo de color
 h1 {
     color: black;
     text-align: center;
@@ -154,13 +150,14 @@ div.desc {
     color: white;
 }
 
-section.container, footer.container-fluid.text-center.foot {
+footer.container-fluid.text-center.foot, header {
     background: #383838;
 }
 
-aside{   
+aside{
+    
+    margin-top: -450px;
     position: absolute;
-	vertical-align: center;
     right: 0;
 }
 
