@@ -1,43 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta content="utf-8">
 	<meta description="Diseño de sitios web">
 	<title>Diseño de Sitio Web</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/main.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet"/>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
-	<script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula&down=async" async></script>
-	<script src="https://www.w3schools.com/lib/w3.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>		
+<body>	
    
-    <div w3-include-html="template/header.html"></div>
+    <header>
+    	<nav>
+  			<div>
+      				<ul id="hmenu">        					
+        			<li><a href="index.html">Inicio</a></li>
+        			<li><a href="lectura.html">Lecturas</a>
+                <ul class="sub-menu">
+                  <li><a href="#">GIT</a></li>
+                  <li><a href="#">GITHUB</a></li>
+                  <li><a href="#">GITHUB PAGES</a></li>
+                  <li><a href="#">HTML5</a></li>
+                  <li><a href="#">CSS3</a></li>
+                </ul>
+              </li>
+  						<li><a href="#">Multimedia</a>
+                <ul>
+                  <li><a href="#">GIT/GITHUB</a></li>
+                  <li><a href="multimedia.html">HTML5/CSS3</a></li>
+                </ul>
+              </li>
+  						<li><a href="about.asp">Autores</a>
+              <ul>
+                  <li><a href="#">JUAN CIFUENTES</a></li>
+                  <li><a href="#">JONATHAN VALENCIA</a></li>
+                  <li><a href="roberto.html">ROBERTO SERRANO</a></li>
+                  <li><a href="#">ARLEX LLANO</a></li>
+                  <li><a href="#">JHON OBANDO</a></li>
+                </ul>
+              </li>
+      				</ul>
+    		</div>
+		</nav>
+    </header>
+	
   
-	<section class="col-md-12 amarillo">
-		<h1>Diseño de Sitios Web</h1>
+	<div>
+		<h1>Dise&ntilde;o de Sitios Web</h1>
 	
-		<div class="center-block text-center espacios">
-			<section >
-				<h3>Manejo basico de html5</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
-				<h3>Manejo basico de CSS3</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
-				<h3>HTML5 y CSS</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
-			</section>
-	   </div>
-	</section>
+	<div style="text-align:center;">
+		<section >
+        <h3>Manejo basico de html5</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
+        <h3>Manejo basico de CSS3</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
+        <h3>HTML5 y CSS</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0?disablekb=1" allowfullscreen></iframe>
+    </section>
 
-	<div w3-include-html="template/footer.html"></div>
-	
-	<script>
-		w3.includeHTML();
-	</script>
+   </div>
+
+
+	</div>
+
+  <section>
+     
+  </section>
+
+	<br />
+	<br />
+
+	<footer id="foot" class="container-fluid text-center foot">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h2>Widget Twitter</h2>
+            <p>Suspendisse hendrerit tellus luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+            <p>© 2014 BS3 UI Kit, All rights reserved</p>
+        </div>
+        <div class="col-md-6 footer-nav animated fadeInUp" style="text-align:center;">
+           	<h4>Contador de Visitas:</h4>
+           	<div id="sfcyl2s6xbmj7pc27geh7s3rxnkggu4gula"></div>
+			<script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula&down=async" async></script>
+			<noscript>
+				<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para pagina web gratis"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula" border="0" title="contador de visitas para pagina web gratis" alt="contador de visitas para pagina web gratis"></a>
+			</noscript>
+        </div>
+       	<div class="col-md-3 footer-ns animated fadeInRight">
+           	<h4>Newsletter</h4>
+            <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+            <p>
+                <div class="input-group">
+                	<input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                    	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                </div><!-- /input-group -->
+            </p>
+        </div>        
+    </footer>
 
 </body>
 </html>
