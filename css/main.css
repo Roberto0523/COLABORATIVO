@@ -1,12 +1,9 @@
 body{
-	font-family: 'Lato', sans-serif;
-}
-
-
-body{
-    margin:0;
-    font-family: sans-serif;
+    /*background: url(img/noise.jpg);*/
+    background-color: beige;
+    font-family: 'Lato', sans-serif;    
     font-size: 14px;
+    margin:0;
 }
 
 menu-wrapper ul{
@@ -35,12 +32,12 @@ menu-wrapper ul{
     width: 90px;
 }
 
-li ul{
+li > ul{
     position: absolute;
     display: none;
 }
 
-sub-menu a{
+.sub-menu a{
     display: block;
     padding: 10px 5px;
     width: 130px;
@@ -82,7 +79,7 @@ img{
 	margin right: 3em;
 }
 
-a{
+a#hmenu{
 	color: #000000;
 }
 
@@ -108,10 +105,6 @@ li a {
 
 li a:hover {
     background-color: #FFC219;
-}
-
-body {
-    background-color: #FFFF00;
 }
 
 h1 {
@@ -148,16 +141,19 @@ div.desc {
 
 #foot p, #foot h2, #foot h4{
     color: white;
+    font-family: 'Verdana';
 }
 
 footer.container-fluid.text-center.foot, header {
     background: #383838;
 }
 
-aside{
-    
+aside{    
     margin-top: -450px;
     position: absolute;
     right: 0;
 }
 
+h2#foot h4#foot p#foot{
+    color: red;
+}
