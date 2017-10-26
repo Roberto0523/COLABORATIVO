@@ -137,10 +137,10 @@ footer.container-fluid.text-center.foot, header {
     background: #383838;
 }
 
-aside{    
+aside.twitter{
     margin-top: -450px;
     position: absolute;
-    right: 0;
+    right: 0;    
 }
 
 .foot h4{
@@ -149,4 +149,93 @@ aside{
 
 .foot p{
     font-size: 14px;   
+}
+
+div#contenedorGithub {
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+ 
+div#contenedorGithub section {
+  /*float: right;*/
+  width: 65%;
+}
+ 
+div#contenedorGithub aside.lecturas {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.headerGit{
+    display: block;
+    text-align: left;
+}
+
+.headerGit img{
+    width: 30%;
+    margin: 20px 0px;
+}
+
+.headerGit p{
+    font-size: 16px;
+}
+
+h1.headerH{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.headTable p{
+    /*background: #6ab0de;*/
+    background: blue;
+}
+
+#menu {
+    position: fixed;
+    float: left;
+    margin: 40px 10px;
+    width: 300px;
+    list-style: none;
+    line-height: 20px;
+    text-align: left;
+    border-right: 1px solid #D4D4D4;
+    z-index: 100;
+}
+
+#menu li{
+    display: block;
+}
+
+#menu li a {
+    display: inline-block;    
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 4px solid transparent;
+}
+
+ul.listaTexto li{
+    list-style: circle;
+    margin: 5px 0px;
+}
+
+.tituloMenu{
+    text-decoration: underline;
+    color: #F7532B;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {    
+    #menu {
+        display: none;
+    }
+
+    .headerGit img{
+        width: 100%;
+    }
 }
