@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="utf-8">
+    <meta description="Diseño de sitios web">
+    <title>Diseño de Sitio Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>  
+   
+    <header>
+        <nav>
+            <div>
+                <ul id="hmenu">                         
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lectura.html">Lecturas</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">GIT</a></li>
+                            <li><a href="infogithub.html">GITHUB</a></li>
+                            <li><a href="githubpages.html">GITHUB PAGES</a></li>
+                            <li><a href="html5.html">HTML5</a></li>
+                            <li><a href="#">CSS3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Multimedia</a>
+                        <ul>
+                            <li><a href="gitgithub.html">GIT/GITHUB</a></li>
+                            <li><a href="multimedia.html">HTML5/CSS3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.asp">Autores</a>
+                        <ul>
+                            <li><a href="#">JUAN CIFUENTES</a></li>
+                            <li><a href="hv-jonathan.html">JONATHAN VALENCIA</a></li>
+                            <li><a href="roberto.html">ROBERTO SERRANO</a></li>
+                            <li><a href="felipe.html">ARLEX LLANOS</a></li>
+                            <li><a href="johnerikc.html">JHON OBANDO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    
+
+    <div id="contenedorGithub">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="col-sm-12">
+                <ul id="menu">
+                    <h4 class="tituloMenu"><span class="glyphicon glyphicon-home"></span> Conociendo GITHUB PAGES</h4>
+                    <li><a href="#parteUno">¿Qué es GitHub Pages?<br /></a></li>
+                    <li><a href="#parteDos">Configuración básica de Github<br /></a></li>
+                    <li><a href="#parteTres">Preparando tu código para subirlo<br /></a></li>
+                    <li><a href="#parteCuatro">Creando un repositorio<br /></a></li>
+                    <li><a href="#parteCinco">Subiendo tus archivos a GitHub<br /></a></li>
+
+                </ul>
+                </div>
+            </div>
+            <center>
+
+                <div class="col-sm-10">
+                    <section class="headerGit">            
+                        <a name="parteUno"></a>
+                        <h1 class="headerH">¿Qué es GitHub Pages?</h1>
+
+                        <p>GitHub Pages es un servicio de alojamiento de sitios estáticos.
+                        GitHub Pages está diseñado para alojar sus páginas personales, de organización o de proyecto directamente desde un repositorio de GitHub. Para obtener más información sobre los diferentes tipos de sitios de Páginas GitHub, consulte "Páginas de <a href="https://help.github.com/articles/user-organization-and-project-pages/">usuario, organización y proyecto "</a>. </p>
+
+                        <p>Puede crear y publicar páginas de GitHub en línea usando el selector de temas de Jekyll . Si prefiere trabajar localmente, puede usar              <a href="https://desktop.github.com/">GitHub Desktop "</a>  o la línea de comando .</p>
+
+                        <p>GitHub Pages es un servicio de alojamiento de sitio estático y no es compatible con el código del lado del servidor, como PHP, Ruby o Python.</p>
+
+                    </section>
+
+                    <section class="headerGit">
+                        <a name="parteDos"></a>
+                        <h1 class="headerH">Configuración básica de Github </h1>
+
+                    
+                        <ol class="listaTexto">
+                            <li>UPrimero que todo, instala Git en tu máquina. Este es el software del sistema de control de versiones subyacente en el que GitHub funciona.
+                            </li>
+                            <li>Seguido, Regístrate para una cuenta de GitHub. Es simple y fácil.</li>
+                            <li>Una vez te hayas registrado, inicia sesión en github.com con tu nombre de usuario y contraseña. </li>
+                        </ol>
+
+                    </section>
+                    
+                    <br/><br/><br/><br/><br/><br/>
+
+                    <section class="headerGit"> 
+                        <a name="parteTres"></a>
+                        <h1 class="headerH">Preparando tu código para subirlo</h1>
+
+                        <p>Tú puedes almacenar cualquier código que tu quieras en un repositorio de Github, pero para usar la característica páginas de Github con pleno efecto, tu código debe estar estructurado como un sitio web típico, por ejemplo que el punto de entrada primario sea un archivo HTML llamado index.html.</p>
+
+                        <p>La otra cosa que necesitas hacer antes de seguir adelante es inicializar el directorio de código como un repositorio Git. para hacer esto:</p>
+
+
+                        <ol class="listaTexto">
+                            <li>Apunta la línea de comandos a tu directorio test-site (o como se llame el directorio que contiene tu sitio web). Para esto, usa el comando cd (Es decir "cambio de directorio"). Esto es lo que deberías digitar si has puesto tu sitio web en un directorio llamado test-site en tu escritorio:</li>   
+
+                            <div class="row">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th><span class="glyphicon glyphicon-info-sign"></span> Nota</th>        
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                
+                                        <tr class="active">
+                                            <td><strong>cd Desktop/test-site</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+
+ 
+                            <li>Cuando la línea comandos está apuntando hacia el interior del directorio de tu sitio web, digita el siguiente comando, que le dice a la herramienta git para convertir el directorio en un repositorio git:</li>
+                       
+
+                            <div class="row">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-info-sign"></span> Nota</th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td><strong>git init</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </ol>    
+                        
+                    </section>
+
+
+                    <section class="headerGit">            
+                        <a name="parteCuatro"></a>
+                        <h1 class="headerH">Creando un repositorio para tu código</h1>
+
+                       <ol class="listaTexto">
+                            <li>A continuación, tu necesitas crear un nuevo repositorio para colocar tus archivos en el. Has clic en el signo más (+) en la parte superior derecha de la página de inicio de GitHub, luego escoge Nuevo Repositorio.</li>
+                            <li>En esta página, en la caja Nombre del Repositorio, digita el nombre para tu repositorio de código, por ejemplo my-repository.</li>
+                            <li>También llena una descripción para decir lo que tu repositorio va a contener. Tu pantalla debe mostrar algo como esto:</li>
+                       
+                            <center>
+                                <div class="col-ms-12">                            
+                                    <img class="githubpages" src="https://mdn.mozillademos.org/files/12143/create-new-repo.png"/>
+                                </div>
+                            </center>
+
+                            <li>Has Clic en Crear repositorio; Esto debería llevarte a la siguiente página: </li>
+                            <br/><br/>
+
+                            <center>
+                                <div class="col-ms-12" >                            
+                                    <img class="githubpages" src="https://mdn.mozillademos.org/files/12141/github-repo.png"/>
+                                </div>
+                            </center>
+
+                       </ol>
+
+
+                    </section>
+
+
+                    <section class="headerGit">            
+                        <a name="parteCinco"></a>
+                        <h1 class="headerH">Subiendo tus archivos a GitHub</h1>
+
+                        <ol class="listaTexto">
+                            <li>En la página actual, tú estás interesado en la sección …o empujar un repositorio existente desde la línea de comandos. Tú deberias ver dos lineas de código listado en esta sección. Copia la totalidad de la primera línea, pégala en la línea de comandos, presiona la tecla Enter. El comando debería mostrarte algo como esto:</li>   
+
+                            <div class="row">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th><span class="glyphicon glyphicon-info-sign"></span> Nota</th>        
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                
+                                        <tr class="active">
+                                            <td><strong>git remote add origin https://github.com/chrisdavidmills/my-repository.git</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+
+ 
+                            <li>A continuación, digita los siguientes dos comandos, presionando Enter despues de cada uno. Estos preparán el código para subirlo a GitHub, y pida a GIt que administre estos archivos.</li>
+                       
+
+                            <div class="row">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-info-sign"></span> Nota</th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td><strong>1. git add --all</strong></td>
+                                        <td><strong>2. git commit -m 'adding my files to my repository'</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+
+                            <li>Por último, empuja el código hasta GitHub yendo a la página de GitHub en la que estas e ingresando en la terminal el segundo de los dos comandos que vimos …o empuje un repositorio existente desde la sección de línea de comandos:</li>
+                       
+
+                            <div class="row">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-info-sign"></span> Nota</th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td><strong>git push -u origin master</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                             <li>Ahora necesitas crear la rama gh-pages de tu repositorio; actualiza la página actual y verá una página del repositorio algo así como la de abajo. Tú necesitas presionar el boton que dice Branch: master, digita gh-pages en el campo de texto, luego presiona el boton azul que dice Create branch: gh-pages. Esto crea una rama de código especial llamada gh-pages que es publicada en una ubicación especial. La URL toma la forma username.github.io/my-repository-name, asi en mi caso de ejemplo, la URL debería ser https://chrisdavidmills.github.io/my-repository. La página mostrada es la página index.html.</li>
+
+
+                              <center>
+                                <div class="col-ms-12" >                            
+                                    <img class="githubpages" src="https://mdn.mozillademos.org/files/12145/repo-site.png"/>
+                                </div>
+                            </center>
+
+                            <li>Navega tu dirección web de GitHub pages en un nuevo ta del navegador, y tu deberias ver tu sitio en linea! Mandalo por correo electrónico a tus amigos y muestra tu dominio.</li>
+
+                        </ol> 
+
+                    </section>
+
+                    
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <footer id="foot" class="container-fluid text-center foot">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h4>Redes Sociales</h4>
+            <div  class="col-md-20 footer-brand animated fadeInLeft" class="social">
+                  <ul>
+                    <li>
+                        <a href="https://es-la.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/" target="icon-facebookicon-facebook" class="icon-facebook" > 
+                            <img src="https://sites.google.com/site/2ndfunniestthing/facebook.png" alt="Seguir a 2nd Funniest Thing en Facebook"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/universidadunad?lang=es" target="_blank"  class="icon-twitter"> 
+                            <img src="https://sites.google.com/site/2ndfunniestthing/twitter.png" alt="Seguir a 2nd Funniest Thing en Twitter"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:atencionalusuario@unad.edu.co" class="icon-mail"> 
+                            <img src="https://sites.google.com/site/2ndfunniestthing/mail.png" alt="Seguir a 2nd Funniest Thing por email"/>
+                        </a>
+                    </li>
+                  </ul>
+            </div>
+            <p>Suspendisse hendrerit tellus luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+            <p>© 2014 BS3 UI Kit, All rights reserved</p>
+        </div>
+        <div class="col-md-6 footer-nav animated fadeInUp" style="text-align:center;">
+            <h4>Contador de Visitas:</h4>
+            <div id="sfcyl2s6xbmj7pc27geh7s3rxnkggu4gula"></div>
+            <script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula&down=async" async></script>
+            <noscript>
+                <a href="https://www.contadorvisitasgratis.com" title="contador de visitas para pagina web gratis"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula" border="0" title="contador de visitas para pagina web gratis" alt="contador de visitas para pagina web gratis"></a>
+            </noscript>
+        </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+            <h4>Newsletter</h4>
+            <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+            <p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                </div><!-- /input-group -->
+            </p>
+        </div>        
+    </footer>
+
+</body>
+</html>
