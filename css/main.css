@@ -1,23 +1,21 @@
 body{
-	font-family: 'Lato', sans-serif;
-}
-
-
-body{
-    margin:0;
-    font-family: sans-serif;
+    /*background: url(img/noise.jpg);*/
+    background-color: beige;
+    font-family: 'Lato', sans-serif;    
     font-size: 14px;
+    margin:0;
 }
 
-menu-wrapper ul{
-    padding: 0;
-    list-style: none;
-}
-
+/*ANTES*/
 #hmenu a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+}
+
+/*DESPUES*/
+a#hmenu{
+    color: #000000;
 }
 
 #hmenu li:hover {
@@ -35,23 +33,39 @@ menu-wrapper ul{
     width: 90px;
 }
 
-li ul{
-    position: absolute;
-    display: none;
-}
-
-sub-menu a{
-    display: block;
-    padding: 10px 5px;
-    width: 130px;
-}
-
 li:hover ul{
     display: block;
 }
 
-#menu-wrapper, li ul{
+li > ul{
+    position: absolute;
+    display: none;
     background: #333;
+}
+
+ul#hmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FFC219;
 }
 
 img{
@@ -80,38 +94,6 @@ img{
 
 .espacio-derecha {
 	margin right: 3em;
-}
-
-a{
-	color: #000000;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #FFC219;
-}
-
-body {
-    background-color: #FFFF00;
 }
 
 h1 {
@@ -148,16 +130,112 @@ div.desc {
 
 #foot p, #foot h2, #foot h4{
     color: white;
+    font-family: 'Verdana';
 }
 
 footer.container-fluid.text-center.foot, header {
     background: #383838;
 }
 
-aside{
-    
+aside.twitter{
     margin-top: -450px;
     position: absolute;
-    right: 0;
+    right: 0;    
 }
 
+.foot h4{
+    font-size: 16px;
+}
+
+.foot p{
+    font-size: 14px;   
+}
+
+div#contenedorGithub {
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+ 
+div#contenedorGithub section {
+  /*float: right;*/
+  width: 65%;
+}
+ 
+div#contenedorGithub aside.lecturas {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.headerGit{
+    display: block;
+    text-align: left;
+}
+
+.headerGit img{
+    width: 30%;
+    margin: 20px 0px;
+}
+
+.headerGit p{
+    font-size: 16px;
+}
+
+h1.headerH{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.headTable p{
+    /*background: #6ab0de;*/
+    background: blue;
+}
+
+#menu {
+    position: fixed;
+    float: left;
+    margin: 40px 10px;
+    width: 300px;
+    list-style: none;
+    line-height: 20px;
+    text-align: left;
+    border-right: 1px solid #D4D4D4;
+    z-index: 100;
+}
+
+#menu li{
+    display: block;
+}
+
+#menu li a {
+    display: inline-block;    
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 4px solid transparent;
+}
+
+ul.listaTexto li{
+    list-style: circle;
+    margin: 5px 0px;
+}
+
+.tituloMenu{
+    text-decoration: underline;
+    color: #F7532B;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {    
+    #menu {
+        display: none;
+    }
+
+    .headerGit img{
+        width: 100%;
+    }
+}
