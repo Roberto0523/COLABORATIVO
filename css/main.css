@@ -180,6 +180,11 @@ div#contenedorGithub aside.lecturas {
     margin: 20px 0px;
 }
 
+
+.headerGit .githubpages{
+    width: 100%;
+}
+
 .headerGit p{
     font-size: 16px;
 }
@@ -197,7 +202,7 @@ h1.headerH{
 #menu {
     position: fixed;
     float: left;
-    margin: 40px 10px;
+    margin: 80px 10px;
     width: 300px;
     list-style: none;
     line-height: 20px;
@@ -220,6 +225,11 @@ h1.headerH{
 
 ul.listaTexto li{
     list-style: circle;
+    margin: 5px 0px;
+}
+
+ol.listaTexto li{
+    list-style: decimal;
     margin: 5px 0px;
 }
 
