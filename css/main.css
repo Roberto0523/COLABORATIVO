@@ -1,5 +1,4 @@
 body{
-    /*background: url(img/noise.jpg);*/
     background-color: beige;
     font-family: 'Lato', sans-serif;    
     font-size: 14px;
@@ -128,13 +127,26 @@ div.desc {
 	background-color: #fff;
 }
 
-#foot p, #foot h2, #foot h4{
+#foot h2, #foot h4{
     color: white;
     font-family: 'Verdana';
 }
 
+footer.container-fluid.text-center.foot .copyright{
+    color: blue;
+    font-weight: bold;
+}
+
 footer.container-fluid.text-center.foot, header {
     background: #383838;
+}
+
+footer.container-fluid.text-center.foot .copyright{
+    background: beige;
+}
+
+footer.foot{
+    padding-top: 20px;    
 }
 
 aside.twitter{
@@ -153,21 +165,20 @@ aside.twitter{
 
 div#contenedorGithub {
   width: 100%;
-  margin: 20px auto;
+  margin: 40px auto;
   overflow: hidden;
 }
  
 div#contenedorGithub section {
-  /*float: right;*/
-  width: 65%;
+    width: 65%;
 }
  
 div#contenedorGithub aside.lecturas {
-  float: left;
-  width: 25%;
-  margin-left: 5%;
-  margin-top: 30px;
-  margin-right: 10px;
+    float: left;
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 .headerGit{
@@ -179,7 +190,6 @@ div#contenedorGithub aside.lecturas {
     width: 30%;
     margin: 20px 0px;
 }
-
 
 .headerGit .githubpages{
     width: 100%;
@@ -195,7 +205,6 @@ h1.headerH{
 }
 
 .headTable p{
-    /*background: #6ab0de;*/
     background: blue;
 }
 
@@ -238,6 +247,28 @@ ol.listaTexto li{
     color: #F7532B;
     font-weight: bold;
     text-align: center;
+}
+
+.btnSocial{
+    width: 40%;
+    float: left;
+}
+
+.btnSocial img{
+    width: 30px;
+    height: 30px;
+}
+
+.btnsocial ul{
+    list-style: none;
+}
+
+.btnSocial ul li a{ 
+    text-decoration: none;
+}
+
+.btnSocial a:hover{
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 900px) {    
