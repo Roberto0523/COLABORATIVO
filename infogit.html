@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="utf-8">
+	<meta description="Diseño de sitios web">
+	<title>Diseño de Sitio Web</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>	
+   
+    <header>
+    	<nav>
+  			<div>
+      			<ul id="hmenu">        					
+        			<li><a href="index.html">Inicio</a></li>
+        			<li><a href="lectura.html">Lecturas</a>
+                		<ul class="sub-menu">
+                  			<li><a href="infogit.html">GIT</a></li>
+                            <li><a href="infogithub.html">GITHUB</a></li>
+                            <li><a href="#">GITHUB PAGES</a></li>
+                            <li><a href="html5.html">HTML5</a></li>
+                            <li><a href="css3.html">CSS3</a></li>
+                		</ul>
+              		</li>
+  					<li><a href="#">Multimedia</a>
+                		<ul>
+                  			<li><a href="gitgithub.html">GIT/GITHUB</a></li>
+                            <li><a href="multimedia.html">HTML5/CSS3</a></li>
+                		</ul>
+              		</li>
+  					<li><a href="about.asp">Autores</a>
+              			<ul>
+                  			<li><a href="hv-jonathan.html">JONATHAN VALENCIA</a></li>
+                            <li><a href="roberto.html">ROBERTO SERRANO</a></li>
+                            <li><a href="felipe.html">ARLEX LLANOS</a></li>
+                            <li><a href="johnerikc.html">JHON OBANDO</a></li>
+                		</ul>
+              		</li>
+      			</ul>
+    		</div>
+		</nav>
+    </header>	
+    
+
+    <div id="contenedorGithub">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="col-sm-12">
+                <ul id="menu">
+                    <h4 class="tituloMenu"><span class="glyphicon glyphicon-home"></span> Conociendo GIT</h4>
+                    <li><a href="#parteUno">¿Qué es GIT?<br /></a></li>
+                    <li><a href="#parteDos">Características más importantes<br /></a></li>
+                    <li><a href="#parteTres">Ordenes básicas<br /></a></li>
+                </ul>
+                </div>
+            </div>
+            <center>
+                <div class="col-sm-10">
+                    <section class="headerGit">            
+                        <a name="parteUno"></a>
+                        <h1 class="headerH">¿Qué es Git?</h1>
+
+                        <p>Git es un software de control de versiones desarrollado por Linus Torvalds, el famoso creador del sistema operativo Linux. Es un software pensado para la eficiencia y la confiabilidad del mantenimiento de versiones para realizar aplicaciones donde se encuentra una gran variedad de archivos fuentes de <strong>desarrollo colaborativo de software.</strong><a href="http://es.wikipedia.org/wiki/Git"> Git</a>.</p>
+
+                        <center>
+                            <img src="http://conociendogithub.readthedocs.io/en/latest/_images/Git.png"/>
+                        </center>
+                    </section>
+
+                    <section class="headerGit">
+                        <a name="parteDos"></a>
+                        <h1 class="headerH" name="parteDos">Características más importantes</h1>
+
+
+                        <p>Algunas de las características más importantes de Git son:</p>
+
+                        <ul class="listaTexto">
+                            <li>Rapidez en la gestión de ramas, debido a que Git nos dice que un cambio será fusionado mucho más frecuentemente de lo que se escribe originalmente.</li>
+                            <li><strong>Gestión distribuida; </strong> Los cambios se importan como ramas adicionales y pueden ser fusionados de la misma manera como se hace en la rama local.</li>
+                            <li>Gestión eficiente de proyectos grandes, dada la rapidez de gestión de diferencias entre archivos, entre otras mejoras de optimización de velocidad de ejecución.</li>
+                            <li>Realmacenamiento periódico en paquetes.</li>
+                        </ul>
+                    <center>                           
+                        <img src=""/>
+                    </center>
+                        <center>
+                            <img src="https://git-scm.com/figures/18333fig0105-tn.png"/>
+                        </center>
+
+                        <p>Git proporciona las herramientas para desarrollar un trabajo en equipo de manera inteligente y rápida y por trabajo nos referimos a algún software o página que implique código el cual necesitemos hacerlo con un grupo de personas.</p>
+                    </section>
+
+                    <section class="headerGit"> 
+                        <a name="parteTres"></a>
+                        <h1 class="headerH" >Ordenes básicas</h1>
+                        <div class="row">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Iniciar un repositorio vacío en unas carpeta específica</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git init</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Añadir todos los archivos del directorio</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git add “nombre_de_archivo”</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Confirmar los cambios realizados. El “mensaje” generalmente se usa para asociar al commit una breve descripción de los cambios realizados.</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git commit –am “mensaje”</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Revertir el commit identificado por "hash_commit"</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git revert “hash_commit"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Subir la rama(branch) “nombre_rama” al servidor remoto</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git push origin “nombre rama”</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th><p>Mostrar el estado actual de la rama(branch), como los cambios que hay sin hacer commit</p></th>        
+                                    </tr>
+                                </thead>
+                                <tbody>                                
+                                    <tr class="active">
+                                        <td>git status</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <center>
+                            <img src="img/git-staging-area-bis.png"/>
+                        </center>
+                    </section>
+                </div>
+            </center>
+        </div>
+    </div>
+
+	<footer id="foot" class="container-fluid text-center foot">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h4>Redes Sociales</h4>
+            <p>Suspendisse hendrerit tellus luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+            <p>© 2014 BS3 UI Kit, All rights reserved</p>
+        </div>
+        <div class="col-md-6 footer-nav animated fadeInUp" style="text-align:center;">
+           	<h4>Contador de Visitas:</h4>
+           	<div id="sfcyl2s6xbmj7pc27geh7s3rxnkggu4gula"></div>
+			<script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula&down=async" async></script>
+			<noscript>
+				<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para pagina web gratis"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=yl2s6xbmj7pc27geh7s3rxnkggu4gula" border="0" title="contador de visitas para pagina web gratis" alt="contador de visitas para pagina web gratis"></a>
+			</noscript>
+        </div>
+       	<div class="col-md-3 footer-ns animated fadeInRight">
+           	<h4>Newsletter</h4>
+            <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+            <p>
+                <div class="input-group">
+                	<input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                    	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                </div><!-- /input-group -->
+            </p>
+        </div>        
+    </footer>
+
+</body>
+</html>
